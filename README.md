@@ -14,13 +14,8 @@
   <img src="https://komarev.com/ghpvc/?username=divyansh212&label=Profile%20views&color=6e40c9&style=flat" alt="profile views" />
 </p>
 
-<!-- 3D WebGL motion: see 3d-scene.html. Record it to a GIF, host it, and the line below will display it.
-     Replace the src URL with your hosted GIF (e.g. a /assets path in this repo). -->
-<p align="center">
-  <img src="REPLACE_WITH_YOUR_HOSTED_GIF_URL" alt="3D scene" width="600" />
-</p>
-
----
+<!-- Animated glowing divider -->
+<img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
 ## 🧠 What I'm Building
 - 🔬 **ATSR** — *Attention-Triggered Self-Reflection* — research architecture for reducing LLM hallucinations via activation-based detection + self-correction loops *(targeting EMNLP / ACL 2026)*
@@ -28,7 +23,8 @@
 - ✂️ **NeuralCut** — neural video/image editing pipeline
 - 🧬 **Jarvis (2027)** — local AI agent on NixOS: declarative system state + LLM reasoning = full system control
 
----
+<!-- Animated glowing divider -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,24&height=3&section=header" width="100%" />
 
 ## 🚀 Featured Projects
 | Project | Description | Stack |
@@ -38,21 +34,21 @@
 | [NeuralCut](https://github.com/divyansh212/NeuralCut) | Neural video/image editing pipeline | Python, PyTorch |
 | [FashInsta](https://github.com/divyansh212/FashInsta) · [🔗 Live](https://fash-insta.vercel.app/) | Computer-vision virtual try-on | Python, CV, FastAPI |
 
----
+<!-- Animated glowing divider -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,24&height=3&section=header" width="100%" />
 
 ## 💬 Let's Connect
 - 🤝 Open to collaborating on **LLM / RAG / AI Agent** projects
 - 🧪 Ask me about **Prompt Engineering, Embeddings, LangChain, System Design**
 - 📍 Based in **New Delhi, India**
 
----
+<!-- Animated glowing divider -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,24&height=3&section=header" width="100%" />
 
 ## 🛠️ Languages & Tools
 <p>
   <img src="https://skillicons.dev/icons?i=python,java,js,c,cpp,linux,git,github,docker,vscode" />
 </p>
-
----
 
 ## 📦 Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -70,13 +66,12 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
----
-
 ## 🔗 Connect
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyansh-raj-037ba4231)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/divyansh212)
 
----
+<!-- Animated glowing divider -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,24&height=3&section=header" width="100%" />
 
 ## 📊 GitHub Stats
 <p align="center">
@@ -88,3 +83,21 @@
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=divyansh212&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
+
+## 🏆 Trophies
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=divyansh212&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1" alt="Trophies" />
+</p>
+
+## 📈 Activity Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=divyansh212&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6E40C9&line=2DD4BF&point=FFFFFF" alt="Activity Graph" />
+</p>
+
+## 🐍 Contribution Snake
+<p align="center">
+  <img src="https://raw.githubusercontent.com/divyansh212/divyansh212/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+</p>
+
+<!-- Animated footer banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,18,24&height=120&section=footer" width="100%" />
