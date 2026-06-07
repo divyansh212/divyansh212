@@ -1,73 +1,100 @@
-<h1 align="center">Hi 👋 I'm Divyansh Raj</h1>
-<h3 align="center">AI Product Engineer · LLM Apps · RAG · Agents · Builder</h3>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=divyansh212&label=Profile%20views&color=6e40c9&style=flat" alt="profile views" />
-</p>
-
----
-
-## 🧠 What I'm Building
-- 🔬 **ATSR** — *Activation-Triggered Self-Reflection* — research architecture for reducing LLM hallucinations via activation-based detection + self-correction loops *(targeting EMNLP / ACL 2026)*
-- 🤖 **LLM Apps & RAG Systems** — end-to-end pipelines with LangChain, LlamaIndex, HuggingFace
-- 🛠️ **LLM Models from Scratch** — building foundational LLM architectures to understand internals deeply
-- 🧬 **Jarvis (2027)** — local AI agent on NixOS: declarative system state + LLM reasoning = full system control
-
----
-
-## 🚀 Featured Projects
-| Project | Description | Stack |
-|---|---|---|
-| [LLM-Models-from-Scratch](https://github.com/divyansh212/LLM-Models-from-Scratch-) | Building foundational LLM architectures from zero | Python, Jupyter |
-| [AI-MODELS](https://github.com/divyansh212/AI-MODELS-) | Exploring and experimenting with AI model architectures | Python, Jupyter |
-| [langchain-models](https://github.com/divyansh212/langchain-models) | LangChain model component implementations | Python |
-
----
-
-## 💬 Let's Connect
-- 🤝 Open to collaborating on **LLM / RAG / AI Agent** projects
-- 🧪 Ask me about **Prompt Engineering, Embeddings, LangChain, System Design**
-- 📍 Based in **New Delhi, India**
-
----
-
-## 🛠️ Languages & Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=python,java,js,c,cpp,linux,git,github,docker,vscode" />
-</p>
-
----
-
-## 📦 Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
----
-
-## 🔗 Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyansh-raj-037ba4231?utm_source=share_via&utm_content=profile&utm_medium=member_android)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/divyansh212)
-
----
-
-## 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=divyansh212&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=divyansh212&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=divyansh212&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Divyansh — 3D Scene</title>
+<style>
+  :root {
+    --bg: #0c1218;
+    --accent: #6e40c9;
+    --accent2: #2dd4bf;
+  }
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: radial-gradient(circle at 50% 40%, #121b24 0%, var(--bg) 70%);
+    overflow: hidden;
+    font-family: "Fira Code", monospace;
+  }
+  /* Record this 600x320 box to a GIF (use ScreenToGif, Kap, or browser capture). */
+  #stage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 320px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(110, 64, 201, 0.25);
+  }
+  canvas { display: block; }
+  .label {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+    color: #9aa7b4;
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="label">DIVYANSH RAJ · AI PRODUCT ENGINEER</div>
+</div>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+  const stage = document.getElementById('stage');
+  const W = 600, H = 320;
+ 
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 1000);
+  camera.position.z = 6;
+ 
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(W, H);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  stage.appendChild(renderer.domElement);
+ 
+  // Wireframe icosahedron — "neural core"
+  const geo = new THREE.IcosahedronGeometry(1.7, 1);
+  const mat = new THREE.MeshBasicMaterial({ color: 0x6e40c9, wireframe: true, transparent: true, opacity: 0.85 });
+  const core = new THREE.Mesh(geo, mat);
+  scene.add(core);
+ 
+  // Inner glowing sphere
+  const innerGeo = new THREE.SphereGeometry(0.9, 32, 32);
+  const innerMat = new THREE.MeshBasicMaterial({ color: 0x2dd4bf, transparent: true, opacity: 0.18 });
+  scene.add(new THREE.Mesh(innerGeo, innerMat));
+ 
+  // Orbiting particles
+  const pGeo = new THREE.BufferGeometry();
+  const N = 400, pos = new Float32Array(N * 3);
+  for (let i = 0; i < N; i++) {
+    const r = 2.6 + Math.random() * 1.6;
+    const t = Math.random() * Math.PI * 2;
+    const p = Math.acos(2 * Math.random() - 1);
+    pos[i*3]   = r * Math.sin(p) * Math.cos(t);
+    pos[i*3+1] = r * Math.sin(p) * Math.sin(t);
+    pos[i*3+2] = r * Math.cos(p);
+  }
+  pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({ color: 0x9aa7b4, size: 0.04 }));
+  scene.add(particles);
+ 
+  function animate() {
+    requestAnimationFrame(animate);
+    core.rotation.x += 0.004;
+    core.rotation.y += 0.006;
+    particles.rotation.y -= 0.0015;
+    renderer.render(scene, camera);
+  }
+  animate();
+</script>
+</body>
+</html>
