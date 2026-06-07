@@ -1,100 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Divyansh — 3D Scene</title>
-<style>
-  :root {
-    --bg: #0c1218;
-    --accent: #6e40c9;
-    --accent2: #2dd4bf;
-  }
-  html, body {
-    margin: 0;
-    height: 100%;
-    background: radial-gradient(circle at 50% 40%, #121b24 0%, var(--bg) 70%);
-    overflow: hidden;
-    font-family: "Fira Code", monospace;
-  }
-  /* Record this 600x320 box to a GIF (use ScreenToGif, Kap, or browser capture). */
-  #stage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 320px;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 0 80px rgba(110, 64, 201, 0.25);
-  }
-  canvas { display: block; }
-  .label {
-    position: absolute;
-    bottom: 18px;
-    width: 100%;
-    text-align: center;
-    color: #9aa7b4;
-    letter-spacing: 3px;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-</style>
-</head>
-<body>
-<div id="stage">
-  <div class="label">DIVYANSH RAJ · AI PRODUCT ENGINEER</div>
-</div>
- 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-  const stage = document.getElementById('stage');
-  const W = 600, H = 320;
- 
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 1000);
-  camera.position.z = 6;
- 
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(W, H);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  stage.appendChild(renderer.domElement);
- 
-  // Wireframe icosahedron — "neural core"
-  const geo = new THREE.IcosahedronGeometry(1.7, 1);
-  const mat = new THREE.MeshBasicMaterial({ color: 0x6e40c9, wireframe: true, transparent: true, opacity: 0.85 });
-  const core = new THREE.Mesh(geo, mat);
-  scene.add(core);
- 
-  // Inner glowing sphere
-  const innerGeo = new THREE.SphereGeometry(0.9, 32, 32);
-  const innerMat = new THREE.MeshBasicMaterial({ color: 0x2dd4bf, transparent: true, opacity: 0.18 });
-  scene.add(new THREE.Mesh(innerGeo, innerMat));
- 
-  // Orbiting particles
-  const pGeo = new THREE.BufferGeometry();
-  const N = 400, pos = new Float32Array(N * 3);
-  for (let i = 0; i < N; i++) {
-    const r = 2.6 + Math.random() * 1.6;
-    const t = Math.random() * Math.PI * 2;
-    const p = Math.acos(2 * Math.random() - 1);
-    pos[i*3]   = r * Math.sin(p) * Math.cos(t);
-    pos[i*3+1] = r * Math.sin(p) * Math.sin(t);
-    pos[i*3+2] = r * Math.cos(p);
-  }
-  pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({ color: 0x9aa7b4, size: 0.04 }));
-  scene.add(particles);
- 
-  function animate() {
-    requestAnimationFrame(animate);
-    core.rotation.x += 0.004;
-    core.rotation.y += 0.006;
-    particles.rotation.y -= 0.0015;
-    renderer.render(scene, camera);
-  }
-  animate();
-</script>
-</body>
-</html>
+<!-- Animated typing header (GitHub-safe: served as a hosted SVG image) -->
+<p align="center">
+  <a href="https://github.com/divyansh212">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+Divyansh+Raj;AI+Product+Engineer;LLM+Apps+%C2%B7+RAG+%C2%B7+Agents;Builder" alt="Typing SVG" />
+  </a>
+</p>
+
+<!-- Animated gradient banner (SMIL animation inside hosted SVG) -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,18,24&height=120&section=header&animation=fadeIn" alt="banner" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=divyansh212&label=Profile%20views&color=6e40c9&style=flat" alt="profile views" />
+</p>
+
+<!-- 3D WebGL motion: see 3d-scene.html. Record it to a GIF, host it, and the line below will display it.
+     Replace the src URL with your hosted GIF (e.g. a /assets path in this repo). -->
+<p align="center">
+  <img src="REPLACE_WITH_YOUR_HOSTED_GIF_URL" alt="3D scene" width="600" />
+</p>
+
+---
+
+## 🧠 What I'm Building
+- 🔬 **ATSR** — *Attention-Triggered Self-Reflection* — research architecture for reducing LLM hallucinations via activation-based detection + self-correction loops *(targeting EMNLP / ACL 2026)*
+- ⚖️ **LexAffin** — vertical LLM for finance & legal, with agentic reasoning over domain documents
+- ✂️ **NeuralCut** — neural video/image editing pipeline
+- 🧬 **Jarvis (2027)** — local AI agent on NixOS: declarative system state + LLM reasoning = full system control
+
+---
+
+## 🚀 Featured Projects
+| Project | Description | Stack |
+|---|---|---|
+| [LexAffin](https://github.com/divyansh212/Lexaffinv1) · [🔗 Live](https://lexaffinv1.vercel.app/) | Vertical LLM for finance & legal — agentic reasoning over domain documents | Kimi K2, LangGraph, Next.js |
+| [ATSR](https://github.com/divyansh212/ATSR-ATTENTION-TRIGGERED-SELF-REFLECTION-) | Attention-Triggered Self-Reflection — hallucination mitigation via activation-based detection + self-correction | PyTorch, Llama 3.1 8B |
+| [NeuralCut](https://github.com/divyansh212/NeuralCut) | Neural video/image editing pipeline | Python, PyTorch |
+| [FashInsta](https://github.com/divyansh212/FashInsta) · [🔗 Live](https://fash-insta.vercel.app/) | Computer-vision virtual try-on | Python, CV, FastAPI |
+
+---
+
+## 💬 Let's Connect
+- 🤝 Open to collaborating on **LLM / RAG / AI Agent** projects
+- 🧪 Ask me about **Prompt Engineering, Embeddings, LangChain, System Design**
+- 📍 Based in **New Delhi, India**
+
+---
+
+## 🛠️ Languages & Tools
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,js,c,cpp,linux,git,github,docker,vscode" />
+</p>
+
+---
+
+## 📦 Tech Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+---
+
+## 🔗 Connect
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyansh-raj-037ba4231)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/divyansh212)
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=divyansh212&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=divyansh212&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=divyansh212&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
